@@ -10,19 +10,6 @@ const DEFAULT_CATEGORIES = [
   { id: 'social', name: 'Social', color: '#f472b6', bg: 'rgba(244,114,182,0.12)' },
 ];
 
-const SAMPLE_EVENTS = [
-  { id: 'e1', title: 'Reunião de equipe', date: new Date().toISOString().split('T')[0], hour: 9, duration: 1, categoryId: 'work', description: 'Alinhamento semanal do time', location: 'Sala 2' },
-  { id: 'e2', title: 'Consulta médica', date: new Date().toISOString().split('T')[0], hour: 14, duration: 1, categoryId: 'health', description: 'Check-up anual', location: 'UPA Central' },
-  { id: 'e3', title: 'Almoço com cliente', date: new Date(Date.now() + 86400000).toISOString().split('T')[0], hour: 12, duration: 2, categoryId: 'social', description: '', location: 'Restaurante XYZ' },
-];
-
-const SAMPLE_TASKS = [
-  { id: 't1', title: 'Revisar relatório mensal', priority: 'high', done: false, categoryId: 'work', dueDate: new Date().toISOString().split('T')[0], description: '' },
-  { id: 't2', title: 'Fazer compras da semana', priority: 'medium', done: false, categoryId: 'personal', dueDate: '', description: '' },
-  { id: 't3', title: 'Estudar React Router', priority: 'medium', done: true, categoryId: 'study', dueDate: '', description: 'Capítulos 3 e 4' },
-  { id: 't4', title: 'Agendar exame de sangue', priority: 'low', done: false, categoryId: 'health', dueDate: '', description: '' },
-];
-
 const load = (key, fallback) => {
   try {
     const v = localStorage.getItem(key);
