@@ -10,6 +10,15 @@ const DEFAULT_CATEGORIES = [
   { id: 'social', name: 'Social', color: '#f472b6', bg: 'rgba(244,114,182,0.12)' },
 ];
 
+const SAMPLE_EVENTS = [
+  
+];
+
+const SAMPLE_TASKS = [
+  
+];
+
+
 const load = (key, fallback) => {
   try {
     const v = localStorage.getItem(key);
